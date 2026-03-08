@@ -1,0 +1,23 @@
+info:
+  name: voice-to-text
+  type: http
+  seq: 5
+
+http:
+  method: POST
+  url: http://localhost:8000/voice-to-text
+  body:
+    type: multipart-form
+    data:
+      - name: file
+        type: file
+        value:
+          - C:\Users\FlavioCampos\Downloads\audio.wav
+        contentType: file
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
