@@ -5,7 +5,14 @@ from jwt import ALGORITHM, SECRET_KEY
 
 security = HTTPBearer()
 
+# This function verfy_token use on endpoints - Dependency(very_token)
 def verify_token(credentials: HTTPAuthorizationCredentials = Depends(security)):
+    """ Verifica si el token de las credenciales es valido 
+
+        Args
+            - credentials: Credenciales que se envian mediante HTTP Header
+
+    """
     
     token = credentials.credentials
 
