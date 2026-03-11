@@ -1,8 +1,12 @@
 fastapi 
 uvicorn
-python/multipart
+python-multipart
 faster-whisper
 nvidia-cublas-cu12
 nvidia-cuda-runtime-cu12
 nvidia-cudnn-cu12
 TTS
+
+# JWT
+python-jose[cryptography]
+passlib[bcrypt]
