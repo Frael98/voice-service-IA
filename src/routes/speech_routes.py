@@ -1,8 +1,8 @@
 from fastapi import APIRouter, UploadFile
 from fastapi.responses import FileResponse
 from fastapi import HTTPException
-from routes.models import TextRequest
-from services import tts_services, whisper_service
+from src.routes.models import TextRequest
+from src.services import tts_services, whisper_service
 import tempfile
 import logging
 
