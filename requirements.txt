@@ -10,3 +10,8 @@ TTS
 # JWT
 python-jose[cryptography]
 passlib[bcrypt]
+
+# Unit Test 
+pytest
+pytest-asyncio
+httpx
